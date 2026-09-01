@@ -1,4 +1,8 @@
 # Event-Planning-and-Documentation-Repository
+
+
+<img width="1055" height="1491" alt="skill-invitation" src="https://github.com/user-attachments/assets/d2e26fd4-5109-4a5f-8764-5b74a8f84ef3" />
+
 # 🎭 College Cultural Fest 2026
 ## Plan. Perform. Preserve. ✨
 ### 🎉 About
@@ -36,3 +40,4 @@
 
 ## 🎊 From an idea to a memory — every moment matters.
 <b> Made with creativity, teamwork, and celebration! 🎉🎭 </b> <br>
+
