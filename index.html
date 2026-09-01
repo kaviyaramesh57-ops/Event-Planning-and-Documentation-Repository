@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>College Cultural Fest 2026 | SDNB Vaishnav College for Women</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #fffaf7;
+      color: #2d1b2e;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #6b215f;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3d2a3e;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #b03a7b;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background:
+        radial-gradient(circle at top left, #ffd6e7, transparent 35%),
+        radial-gradient(circle at bottom right, #e5c8ff, transparent 35%),
+        linear-gradient(135deg, #fff8f3, #fff0f7);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .college-name {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 30px;
+      background: #ffffff;
+      color: #8a2b67;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      line-height: 1.1;
+      color: #5b174f;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #c14485;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #604b60;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 28px;
+      margin: 8px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .primary-btn {
+      background: #7a235f;
+      color: white;
+    }
+
+    .secondary-btn {
+      background: white;
+      color: #7a235f;
+      border: 1px solid #dca6c4;
+    }
+
+    .hero-buttons a:hover {
+      transform: translateY(-3px);
+    }
+
+    /* GENERAL SECTION */
+    section {
+      padding: 85px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title span {
+      color: #b03a7b;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .section-title h2 {
+      font-size: 2.3rem;
+      color: #5b174f;
+      margin-top: 8px;
+    }
+
+    /* ABOUT */
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(88, 30, 73, 0.08);
+      text-align: center;
+    }
+
+    .about-box p {
+      color: #5d515d;
+      font-size: 1.05rem;
+    }
+
+    /* EVENT CARDS */
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+    }
+
+    .event-card {
+      background: white;
+      padding: 30px 22px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(88, 30, 73, 0.08);
+      transition: 0.3s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .event-icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .event-card h3 {
+      color: #70225c;
+      margin-bottom: 8px;
+    }
+
+    .event-card p {
+      color: #6b606b;
+      font-size: 0.95rem;
+    }
+
+    /* DETAILS */
+    .details-section {
+      background: #f8eaf1;
+    }
+
+    .details-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .detail {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .detail h3 {
+      color: #7a235f;
+      margin-bottom: 8px;
+    }
+
+    .detail p {
+      color: #625562;
+    }
+
+    /* DOCUMENTATION */
+    .documentation {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .doc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .doc-item {
+      background: white;
+      padding: 18px;
+      border-left: 5px solid #b03a7b;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    /* QUOTE */
+    .quote {
+      background: linear-gradient(135deg, #6d1f59, #a43d7d);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .quote h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #35142e;
+      color: #f7eaf2;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+
+      .about-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">🎭 CULTURAL FEST 2026</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#documentation">Documentation</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+
+      <div class="college-name">
+        🎓 SDNB Vaishnav College for Women
+      </div>
+
+      <h1>
+        College <span>Cultural Fest</span><br>
+        2026
+      </h1>
+
+      <p>
+        A vibrant celebration of talent, creativity, culture,
+        friendship, and unforgettable memories.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#events" class="primary-btn">Explore Events ✨</a>
+        <a href="#about" class="secondary-btn">Discover More ↓</a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="section-title">
+      <span>ABOUT THE FEST</span>
+      <h2>Where Talent Takes the Stage ✨</h2>
+    </div>
+
+    <div class="about-box">
+      <p>
+        College Cultural Fest 2026 is a celebration that brings
+        students together to showcase their creativity, passion,
+        and unique talents. From energetic performances to exciting
+        activities, the fest creates a space for expression,
+        teamwork, and joyful memories.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- EVENTS -->
+  <section id="events">
+
+    <div class="section-title">
+      <span>FEST HIGHLIGHTS</span>
+      <h2>Celebrate Every Talent 🎉</h2>
+    </div>
+
+    <div class="event-grid">
+
+      <div class="event-card">
+        <div class="event-icon">💃</div>
+        <h3>Dance</h3>
+        <p>Feel the rhythm and bring the stage to life.</p>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">🎤</div>
+        <h3>Music</h3>
+        <p>Celebrate melodies, voices, and musical talent.</p>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">🎭</div>
+        <h3>Drama</h3>
+        <p>Stories, emotions, and creativity on stage.</p>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">🎨</div>
+        <h3>Creative Arts</h3>
+        <p>Ideas transformed into colourful expressions.</p>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">🎮</div>
+        <h3>Fun & Games</h3>
+        <p>Excitement, laughter, and teamwork for everyone.</p>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">🏆</div>
+        <h3>Celebration</h3>
+        <p>Recognising talent and celebrating achievements.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DETAILS -->
+  <section class="details-section" id="details">
+
+    <div class="section-title">
+      <span>EVENT INFORMATION</span>
+      <h2>Save the Celebration 📅</h2>
+    </div>
+
+    <div class="details-container">
+
+      <div class="detail">
+        <h3>🎉 Event</h3>
+        <p>College Cultural Fest 2026</p>
+      </div>
+
+      <div class="detail">
+        <h3>📆 Date</h3>
+        <p>To Be Announced</p>
+      </div>
+
+      <div class="detail">
+        <h3>📍 Venue</h3>
+        <p>College Auditorium</p>
+      </div>
+
+      <div class="detail">
+        <h3>👥 Organized By</h3>
+        <p>Student Event Committee</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOCUMENTATION -->
+  <section id="documentation">
+
+    <div class="section-title">
+      <span>OUR PROJECT</span>
+      <h2>From Planning to Memories 📋</h2>
+    </div>
+
+    <div class="documentation">
+
+      <p style="text-align:center; color:#625562;">
+        This project documents every important stage of the
+        College Cultural Fest in one organized repository.
+      </p>
+
+      <div class="doc-list">
+        <div class="doc-item">🎯 Event Proposal</div>
+        <div class="doc-item">👥 Committee Structure</div>
+        <div class="doc-item">💰 Budget Planning</div>
+        <div class="doc-item">💌 Invitations</div>
+        <div class="doc-item">📅 Event Schedule</div>
+        <div class="doc-item">📸 Photo Documentation</div>
+        <div class="doc-item">📝 Feedback Report</div>
+        <div class="doc-item">📄 Final Event Report</div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUOTE -->
+  <section class="quote">
+    <h2>🎊 From an Idea to a Memory</h2>
+    <p>Every performance tells a story. Every moment becomes a memory.</p>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>🎭 College Cultural Fest 2026</strong></p>
+    <p>SDNB Vaishnav College for Women</p>
+    <p>✨ Made with creativity, teamwork, and celebration ✨</p>
+  </footer>
+
+</body>
+</html>
