@@ -249,12 +249,30 @@
     }
 
     .doc-item {
-      background: white;
-      padding: 18px;
-      border-left: 5px solid #b03a7b;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    }
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(88, 30, 73, 0.08);
+    text-decoration: none;
+    color: #5b174f;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.doc-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(88, 30, 73, 0.15);
+}
+
+.doc-item .arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: #b03a7b;
+}
 
     /* QUOTE */
     .quote {
@@ -470,15 +488,56 @@
       </p>
 
       <div class="doc-list">
-        <div class="doc-item">🎯 Event Proposal</div>
-        <div class="doc-item">👥 Committee Structure</div>
-        <div class="doc-item">💰 Budget Planning</div>
-        <div class="doc-item">💌 Invitations</div>
-        <div class="doc-item">📅 Event Schedule</div>
-        <div class="doc-item">📸 Photo Documentation</div>
-        <div class="doc-item">📝 Feedback Report</div>
-        <div class="doc-item">📄 Final Event Report</div>
-      </div>
+
+    <a href="event-proposal.md" class="doc-item">
+        <span>🎯</span>
+        <span>Event Proposal</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="committee-structure.md" class="doc-item">
+        <span>👥</span>
+        <span>Committee Structure</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="budget-planning.md" class="doc-item">
+        <span>💰</span>
+        <span>Budget Planning</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="invitations.md" class="doc-item">
+        <span>💌</span>
+        <span>Invitations</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="event-schedule.md" class="doc-item">
+        <span>📅</span>
+        <span>Event Schedule</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="photo-documentation.md" class="doc-item">
+        <span>📸</span>
+        <span>Photo Documentation</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="feedback-report.md" class="doc-item">
+        <span>📝</span>
+        <span>Feedback Report</span>
+        <span class="arrow">→</span>
+    </a>
+
+    <a href="final-event-report.md" class="doc-item">
+        <span>📄</span>
+        <span>Final Event Report</span>
+        <span class="arrow">→</span>
+    </a>
+
+</div>
 
     </div>
 
