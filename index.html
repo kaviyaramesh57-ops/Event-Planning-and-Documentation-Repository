@@ -61,19 +61,26 @@
       color: #b03a7b;
     }
 
-    /* HERO SECTION */
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 80px 20px;
-      background:
-        radial-gradient(circle at top left, #ffd6e7, transparent 35%),
-        radial-gradient(circle at bottom right, #e5c8ff, transparent 35%),
-        linear-gradient(135deg, #fff8f3, #fff0f7);
-    }
+   /* HERO SECTION */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("images/collegeimg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
     .hero-content {
       max-width: 850px;
@@ -91,22 +98,24 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 7vw, 5.5rem);
-      line-height: 1.1;
-      color: #5b174f;
-      margin-bottom: 20px;
-    }
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
 
     .hero h1 span {
-      color: #c14485;
-    }
+  color: #ffd1e6;
+}
 
     .hero p {
-      font-size: 1.15rem;
-      max-width: 650px;
-      margin: 0 auto 30px;
-      color: #604b60;
-    }
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
 
     .hero-buttons a {
       display: inline-block;
